@@ -1,0 +1,798 @@
+{"level":"info","ts":"2022-10-12T17:34:43.725+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:34:43.726+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:34:43.727+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:34:43.727+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"info","ts":"2022-10-12T17:38:18.586+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:38:18.588+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:38:18.588+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:38:18.601+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:38:18.601+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:38:18.601+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:38:18.601+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"fatal","ts":"2022-10-12T17:38:18.601+0800","caller":"component/ent.go:65","msg":"Error opening connection to repository: sql: unknown driver \"sqlite\" (forgotten import?)","stacktrace":"urlshortener/component.openDB\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/component/ent.go:65\nurlshortener/component.NewEntClient\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/component/ent.go:75\nurlshortener/component.initEntClient\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/component/ent.go:22\nurlshortener/component.GetEntClient\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/component/ent.go:38\nmain.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:25\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-10-12T17:41:27.116+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:41:27.118+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:41:27.118+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:41:27.129+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:41:27.129+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:41:27.129+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:41:27.129+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:41:27.129+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:41:27.129+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:41:27.129+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"error","ts":"2022-10-12T17:41:27.129+0800","caller":"server/url-shortener.go:33","msg":"Failed creating schema resources: sqlite: check foreign_keys pragma: reading schema information sql: database is closed","stacktrace":"main.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:33\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"warn","ts":"2022-10-12T17:41:27.129+0800","caller":"server/url-shortener.go:34","msg":"Schema migration failed. Data integrity of the service may be at risk!!!"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:41:27.130+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:41:27.130+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:41:45.529+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:41:45.530+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:41:45.530+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:41:45.541+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:41:45.541+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:41:45.542+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:41:45.542+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"error","ts":"2022-10-12T17:41:45.542+0800","caller":"server/url-shortener.go:33","msg":"Failed creating schema resources: sqlite: check foreign_keys pragma: reading schema information invalid uri authority: urlshort:urlshort123@127.0.0.1:5432","stacktrace":"main.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:33\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"warn","ts":"2022-10-12T17:41:45.542+0800","caller":"server/url-shortener.go:34","msg":"Schema migration failed. Data integrity of the service may be at risk!!!"}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:41:45.542+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:41:45.542+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:45.542+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:41:45.543+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:41:45.543+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:43:47.085+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:43:47.087+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:43:47.087+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:43:47.101+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:43:47.101+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:43:47.102+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:43:47.102+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:43:47.102+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:43:47.102+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:43:47.102+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"error","ts":"2022-10-12T17:43:47.102+0800","caller":"server/url-shortener.go:33","msg":"Failed creating schema resources: sqlite: check foreign_keys pragma: reading schema information invalid uri authority: urlshort:urlshort123@127.0.0.1:5432","stacktrace":"main.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:33\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"warn","ts":"2022-10-12T17:43:47.102+0800","caller":"server/url-shortener.go:34","msg":"Schema migration failed. Data integrity of the service may be at risk!!!"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:43:47.103+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:43:47.103+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:44:22.193+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:44:22.194+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:44:22.195+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:44:22.204+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:44:22.205+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:44:22.205+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:44:22.205+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:44:22.205+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:44:22.205+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:44:22.205+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:44:22.206+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:44:22.206+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:44:22.206+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:44:22.206+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:44:22.206+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:44:22.206+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:44:22.207+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:44:22.207+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:47:47.356+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:47:47.359+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:47:47.359+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:47:47.370+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:47:47.370+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:47:47.370+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:47:47.370+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:47:47.370+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:47:47.370+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:47:47.370+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:47:47.372+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:47:47.372+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:48:04.440+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:48:04.442+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:48:04.442+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:48:04.453+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:48:04.453+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:48:04.453+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:48:04.453+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:48:04.454+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:48:04.454+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:48:04.454+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:48:04.456+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:48:04.456+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:48:30.898+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:48:30.899+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:48:30.899+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:48:30.910+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:48:30.910+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:48:30.910+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:48:30.910+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:48:30.911+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:48:30.911+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:48:30.911+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:48:30.913+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:48:30.913+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:49:39.213+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:49:39.214+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:49:39.214+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:49:39.224+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:49:39.224+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:49:39.225+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:49:39.225+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:49:39.225+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:49:39.225+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:49:39.225+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:49:39.226+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:49:39.226+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:50:12.067+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:50:12.068+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:50:12.068+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:50:12.089+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:50:12.090+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:50:12.090+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:50:12.090+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:50:12.090+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:50:12.090+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:50:12.090+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:50:12.092+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:50:12.092+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:50:12.092+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:50:12.092+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:50:12.093+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:50:12.093+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:50:25.428+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:50:25.430+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:50:25.430+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:50:25.445+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:50:25.445+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:50:25.445+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:50:25.445+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:50:25.445+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:50:25.445+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:50:25.445+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:50:25.448+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:50:25.448+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:51:19.404+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:51:19.405+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:51:19.405+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:51:19.416+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:51:19.416+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:51:19.416+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:51:19.416+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:51:19.416+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:51:19.416+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:51:19.416+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:51:19.418+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:51:19.418+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:51:29.832+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:51:29.833+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:51:29.833+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:51:42.207+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:51:42.208+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:51:42.208+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:51:42.218+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:51:42.219+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:51:42.219+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:51:42.219+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:51:42.219+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:51:42.219+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:51:42.219+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:51:42.221+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:51:42.221+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:55:56.170+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:55:56.171+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:55:56.171+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:55:56.179+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:55:56.179+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:55:56.179+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:55:56.179+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:55:56.179+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:55:56.179+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:55:56.179+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:55:56.181+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:55:56.181+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:57:27.326+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:57:27.327+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:57:27.327+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:57:27.337+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:57:27.337+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:57:27.337+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:57:27.337+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:57:27.338+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:57:27.338+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:57:27.338+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:57:27.340+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:57:27.340+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:58:46.122+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:58:46.123+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:58:46.123+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:58:46.133+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:58:46.133+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:58:46.133+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:58:46.133+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:58:46.133+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:58:46.133+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:58:46.133+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:58:46.135+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:58:46.135+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:58:46.136+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:59:40.144+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:59:40.146+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:59:40.146+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:59:40.159+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:59:40.159+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:59:40.159+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:59:40.159+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:59:40.159+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:59:40.159+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:59:40.159+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:59:40.160+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:59:40.160+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T17:59:45.520+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T17:59:45.521+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T17:59:45.521+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T17:59:45.532+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T17:59:45.532+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T17:59:45.532+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T17:59:45.532+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T17:59:45.532+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T17:59:45.532+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T17:59:45.532+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T17:59:45.534+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T17:59:45.534+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:01:58.776+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:01:58.777+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:01:58.777+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:01:58.787+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:01:58.787+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:01:58.787+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:01:58.787+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:01:58.787+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:01:58.787+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:01:58.787+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:01:58.789+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:01:58.789+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:05:17.936+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:05:17.936+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:05:17.936+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:05:17.947+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:05:17.947+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:05:17.947+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:05:17.947+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:05:17.947+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:05:17.947+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:05:17.947+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:05:17.949+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:05:17.949+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:05:17.949+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:05:17.949+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:17.949+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:17.949+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:05:17.950+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:05:17.950+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:05:20.808+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:05:20.809+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:05:20.809+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:05:20.819+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:05:20.819+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:05:20.819+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:05:20.819+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:05:20.819+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:05:20.819+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:05:20.819+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:05:20.821+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:05:20.821+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:07:08.780+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:07:08.781+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:07:08.781+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:07:08.794+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:07:08.794+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:07:08.794+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:07:08.794+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:07:08.794+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:07:08.794+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:07:08.794+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:07:08.797+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:07:08.797+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:14:33.908+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:14:33.909+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:14:33.909+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:14:33.922+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:14:33.922+0800","caller":"component/ent.go:35","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:14:33.922+0800","caller":"component/ent.go:38","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:14:33.922+0800","caller":"component/ent.go:22","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:14:33.922+0800","caller":"component/ent.go:29","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:14:33.922+0800","caller":"component/ent.go:44","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:14:33.922+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:14:33.924+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:14:33.924+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:15:40.243+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:15:40.244+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:15:40.244+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:15:40.258+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:15:40.258+0800","caller":"component/ent.go:34","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:15:40.258+0800","caller":"component/ent.go:37","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:15:40.258+0800","caller":"component/ent.go:21","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:15:40.259+0800","caller":"component/ent.go:28","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:15:40.259+0800","caller":"component/ent.go:43","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:15:40.259+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:15:40.261+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:15:40.262+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:15:40.262+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:15:40.262+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:15:40.262+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:15:40.262+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:15:40.262+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:20:11.324+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:20:11.326+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:20:11.326+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:20:11.335+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:20:11.335+0800","caller":"component/ent.go:35","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:20:11.335+0800","caller":"component/ent.go:38","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:20:11.335+0800","caller":"component/ent.go:22","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/ent.go:29","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:20:11.336+0800","caller":"component/ent.go:44","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"error","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:33","msg":"Failed creating schema resources: sqlite: check foreign_keys pragma: reading schema information unable to open database file: not a directory","stacktrace":"main.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:33\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"warn","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:34","msg":"Schema migration failed. Data integrity of the service may be at risk!!!"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:20:11.336+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:20:11.336+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:20:42.612+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:20:42.622+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:20:42.622+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:20:42.633+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:20:42.641+0800","caller":"component/ent.go:35","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:20:42.641+0800","caller":"component/ent.go:38","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:20:42.641+0800","caller":"component/ent.go:22","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:20:42.641+0800","caller":"component/ent.go:29","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:20:42.641+0800","caller":"component/ent.go:44","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:20:42.642+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"error","ts":"2022-10-12T18:20:42.642+0800","caller":"server/url-shortener.go:33","msg":"Failed creating schema resources: sqlite: check foreign_keys pragma: reading schema information unable to open database file: not a directory","stacktrace":"main.main\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/cmd/server/url-shortener.go:33\nruntime.main\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/runtime/proc.go:250"}
+{"level":"warn","ts":"2022-10-12T18:20:42.643+0800","caller":"server/url-shortener.go:34","msg":"Schema migration failed. Data integrity of the service may be at risk!!!"}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:20:42.643+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:20:42.643+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:20:42.661+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:20:42.661+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:20:42.661+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:21:45.417+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:21:45.418+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:21:45.418+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:21:45.430+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:21:45.430+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:21:45.430+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:21:45.430+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:21:45.430+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:21:45.430+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:21:45.430+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:21:45.432+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:21:45.432+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:21:45.432+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:21:45.432+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:21:45.432+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:21:45.432+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:21:45.433+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:21:45.433+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:24:03.862+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:24:03.863+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:24:03.863+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:24:03.872+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:24:03.872+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:24:03.872+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:24:03.873+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:24:03.873+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:24:03.873+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:24:03.873+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:24:03.875+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:24:03.875+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"info","ts":"2022-10-12T18:51:14.353+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:51:14.354+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:51:14.354+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:51:14.364+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:51:14.364+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:51:14.365+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:51:14.365+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:51:14.365+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:51:14.365+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:51:14.365+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:51:14.367+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:51:14.367+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"debug","ts":"2022-10-12T18:51:45.599+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:51:45.601+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:51:45.603+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"::1","latency":"3.397667ms","host":"localhost:8767","request":"GET /123","status":204,"size":0,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"132afe54fc9f4be2b96e8f7edfadae86"}
+{"level":"info","ts":"2022-10-12T18:52:03.529+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"7.875µs","host":"127.0.0.1:8767","request":"GET /","status":200,"size":59,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"302d8833470943bc98cfcdac854c5704"}
+{"level":"debug","ts":"2022-10-12T18:52:03.609+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:52:03.609+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:52:03.613+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"4.298917ms","host":"127.0.0.1:8767","request":"GET /favicon.ico","status":204,"size":0,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"c94d102c0e664c14ad44757dafe82b83"}
+{"level":"info","ts":"2022-10-12T18:52:07.186+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"16.75µs","host":"127.0.0.1:8767","request":"GET /","status":200,"size":59,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"62a206bdb00a41178bff31fe052244fa"}
+{"level":"debug","ts":"2022-10-12T18:52:09.530+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:52:09.531+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:52:09.531+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"1.262417ms","host":"127.0.0.1:8767","request":"GET /1234","status":204,"size":0,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"646ca329cc39452a9b46e659480c7ac4"}
+{"level":"debug","ts":"2022-10-12T18:52:33.519+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:52:33.519+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:52:33.520+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"1.198375ms","host":"127.0.0.1:8767","request":"GET /:123412","status":204,"size":0,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"f42fdd7108cd4191ac669e2cfde68e69"}
+{"level":"info","ts":"2022-10-12T18:54:11.760+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"6.833µs","host":"127.0.0.1:8767","request":"GET /","status":200,"size":59,"user_agent":"PostmanRuntime/7.29.2","request_id":"13169756a61448d38974c41a9800369c"}
+{"level":"debug","ts":"2022-10-12T18:54:18.516+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:54:18.517+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:54:18.517+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"1.457166ms","host":"127.0.0.1:8767","request":"GET /12345","status":204,"size":0,"user_agent":"PostmanRuntime/7.29.2","request_id":"faeb1240d535404091fea8931d9eccf8"}
+{"level":"info","ts":"2022-10-12T18:55:29.602+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:55:29.603+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:55:29.603+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:55:29.615+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:55:29.615+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:55:29.615+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:55:29.615+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:55:29.615+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:55:29.615+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:55:29.615+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:55:29.617+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:55:29.617+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:55:29.618+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:55:29.618+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:55:29.618+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"debug","ts":"2022-10-12T18:55:30.353+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:55:30.356+0800","caller":"handler/url-shortener.go:32","msg":"Entity Operation Error: ent: url not found","stacktrace":"urlshortener/handler.RedirectById\n\t/Users/salleh/repos/ghc/sekolah/urlshortener/handler/url-shortener.go:32\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:536\ngithub.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:18\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"warn","ts":"2022-10-12T18:55:30.358+0800","caller":"echozap@v1.1.3/logger.go:47","msg":"Client error","remote_ip":"127.0.0.1","latency":"4.778875ms","host":"127.0.0.1:8767","request":"GET /12345","status":404,"size":32,"user_agent":"PostmanRuntime/7.29.2","request_id":"f52c5f6d3d06418b82dd8da9e13c07cf"}
+{"level":"debug","ts":"2022-10-12T18:55:58.827+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"info","ts":"2022-10-12T18:55:58.834+0800","caller":"echozap@v1.1.3/logger.go:51","msg":"Success","remote_ip":"127.0.0.1","latency":"7.67075ms","host":"127.0.0.1:8767","request":"GET /hjr6r3","status":200,"size":225,"user_agent":"PostmanRuntime/7.29.2","request_id":"8a67e3b95a2b4be3bd84663e1c78b895"}
+{"level":"info","ts":"2022-10-12T18:57:10.397+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:57:10.398+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:57:10.398+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:57:10.405+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:57:10.406+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:57:10.406+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:57:10.406+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:57:10.406+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:57:10.406+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:57:10.406+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:57:10.407+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:57:10.407+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"debug","ts":"2022-10-12T18:57:13.511+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"error","ts":"2022-10-12T18:57:13.511+0800","caller":"echozap@v1.1.3/logger.go:45","msg":"Server error","error":"invalid redirect status code","remote_ip":"127.0.0.1","latency":"742.875µs","host":"127.0.0.1:8767","request":"GET /hjr6r3","status":500,"size":84,"user_agent":"PostmanRuntime/7.29.2","request_id":"da7e779290e040d4a8ffa8e5996d1d77","stacktrace":"github.com/brpaz/echozap.ZapLogger.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/brpaz/echozap@v1.1.3/logger.go:45\ngithub.com/labstack/echo-contrib/prometheus.(*Prometheus).HandlerFunc.func1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo-contrib@v0.13.0/prometheus/prometheus.go:406\ngithub.com/labstack/echo/v4/middleware.SecureWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/secure.go:142\ngithub.com/labstack/echo/v4/middleware.RequestIDWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/request_id.go:70\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/middleware/recover.go:119\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/Users/salleh/go/pkg/mod/github.com/labstack/echo/v4@v4.9.0/echo.go:646\nnet/http.serverHandler.ServeHTTP\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:2947\nnet/http.(*conn).serve\n\t/opt/homebrew/Cellar/go/1.19.1/libexec/src/net/http/server.go:1991"}
+{"level":"info","ts":"2022-10-12T18:58:20.008+0800","caller":"config/config.go:58","msg":"Initializing Application Configuration"}
+{"level":"info","ts":"2022-10-12T18:58:20.009+0800","caller":"config/config.go:92","msg":"Application Configuration unmarshal successful"}
+{"level":"info","ts":"2022-10-12T18:58:20.009+0800","caller":"config/config.go:68","msg":"Application Configuration initialization complete"}
+{"level":"info","ts":"2022-10-12T18:58:20.020+0800","caller":"utility/request_id.go:16","msg":"Setting random id generator meta value to: 1"}
+{"level":"debug","ts":"2022-10-12T18:58:20.020+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"debug","ts":"2022-10-12T18:58:20.020+0800","caller":"component/ent.go:39","msg":"No Entity Repository Client found. Creating new instance."}
+{"level":"info","ts":"2022-10-12T18:58:20.020+0800","caller":"component/ent.go:23","msg":"Initializing Ent Client instance..."}
+{"level":"info","ts":"2022-10-12T18:58:20.020+0800","caller":"component/ent.go:30","msg":"Ent Client initialized"}
+{"level":"debug","ts":"2022-10-12T18:58:20.020+0800","caller":"component/ent.go:45","msg":"Entity Repository Client Initialized"}
+{"level":"info","ts":"2022-10-12T18:58:20.020+0800","caller":"server/url-shortener.go:31","msg":"Running schema migration on entity repository"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:36","msg":"Schema migration/update on entity repository completed"}
+{"level":"debug","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:33","msg":"Fetching Echo Server instance..."}
+{"level":"debug","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:36","msg":"Echo Server instance does not exist. Attempting to initialize a new instance..."}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:20","msg":"Initializing Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:49","msg":"Creating new Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"component/prometheus.go:31","msg":"Creating new prometheus middleware instance"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:79","msg":"New Echo Server instance created"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:27","msg":"Echo Server instance initialized"}
+{"level":"debug","ts":"2022-10-12T18:58:20.022+0800","caller":"component/echo.go:42","msg":"Echo Server instance Initialized"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:44","msg":"Registering route for Echo Server instance..."}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:45","msg":"Registering universal route"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:50","msg":"Universal route registration completed"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:52","msg":"Echo Server instance setup completed"}
+{"level":"info","ts":"2022-10-12T18:58:20.022+0800","caller":"server/url-shortener.go:55","msg":"Starting up URL Shortener HTTP Server"}
+{"level":"debug","ts":"2022-10-12T18:58:20.237+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"info","ts":"2022-10-12T18:58:20.239+0800","caller":"echozap@v1.1.3/logger.go:49","msg":"Redirection","remote_ip":"127.0.0.1","latency":"1.352917ms","host":"127.0.0.1:8767","request":"GET /hjr6r3","status":301,"size":0,"user_agent":"PostmanRuntime/7.29.2","request_id":"3fc2455407d54222ac64aa390fddbbe4"}
+{"level":"debug","ts":"2022-10-12T18:58:34.996+0800","caller":"component/ent.go:36","msg":"Fetching Repository Client"}
+{"level":"info","ts":"2022-10-12T18:58:34.997+0800","caller":"echozap@v1.1.3/logger.go:49","msg":"Redirection","remote_ip":"127.0.0.1","latency":"489.292µs","host":"127.0.0.1:8767","request":"GET /hjr6r3","status":301,"size":0,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15","request_id":"066feaa1e75948c783ba244bab1b0478"}
