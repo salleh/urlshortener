@@ -29,7 +29,7 @@ func InitializeLogger() {
 	//logFile, _ := os.OpenFile("cid-log.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	//writer := zapcore.AddSync(logFile)
 	AppZapWriter = zapcore.AddSync(&lumberjack.Logger{
-		Filename:   "otp.log.json",
+		Filename:   "url-shortener.log.json",
 		MaxSize:    128, // megabytes
 		MaxBackups: 3,
 		MaxAge:     28, // days
