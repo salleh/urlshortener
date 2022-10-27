@@ -1,5 +1,5 @@
 # URL Shortener Micro Service
-![GitHub](https://img.shields.io/github/license/salleh/urlshortener?style=plastic)
+![GitHub](https://img.shields.io/github/license/salleh/urlshortener?style=plastic)(https://raw.githubusercontent.com/salleh/urlshortener/main/LICENSE)
 
 `URL Shortener` is a micro-service to shorten long URLs and to handle the redirection by generated short URLs.
 
